@@ -1,23 +1,39 @@
-# ANTIGRAVITY Portfolio
+# Portfolio | Gadde Sri Charan
 
-A high-end, immersive portfolio website featuring smooth scrolling, GSAP animations, and unique interactions.
+An immersive, high-end portfolio website built with modern frontend technologies, featuring sophisticated animations and a user-centric design.
 
-## How to Run
+## 🚀 Live Demo
+[View Live Site](https://gsricharan12.github.io/Portfolio/)
 
-1. **Recommended**: Open this folder in VS Code and use the "Live Server" extension to launch `index.html`. This ensures all scripts and assets load correctly.
-2. **Alternative**: Simply double-click `index.html` to open it in your browser. (Note: Some browsers may restrict strict GSAP features on local file protocols, so a server is better).
+## 👋 About Me
+I am a dedicated Frontend Developer and UI Engineer focused on bridging the gap between sophisticated logic and fluid interactivity. I specialize in building responsive, interactive, and visually stunning user interfaces.
 
-## Features
+### Technical Arsenal
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+), Responsive Web Design (RWD), UI/UX Design
+- **Backend**: Node.js, Python, MySQL, Express.js, JWT Authentication
+- **Tools**: Git, GitHub, VS Code, Browser DevTools
+- **Libraries**: GSAP (GreenSock), ScrollTrigger, Lenis (Smooth Scroll)
 
-- **Smooth Scrolling**: Powered by Lenis for a buttery smooth experience.
-- **Cinematic Intro**: Custom loader sequence.
-- **Interactive Cursor**: Custom magnetic cursor with blend modes.
-- **Horizontal Scroll**: "Work" section scrolls horizontally while pinned.
-- **Dynamic Themes**: Background colors shift as you scroll through sections.
-- **Responsive**: Adapts to different screen sizes.
+## ✨ Key Features
+- **Immersive Animations**: Powered by GSAP for high-performance motion choreography.
+- **Buttery Smooth Scrolling**: Integrated with Lenis for a premium browsing feel.
+- **Custom Interaction**: Magnetic buttons and a dynamic custom cursor that adapts to content.
+- **Fully Responsive**: Optimized for every screen size, from mobile devices to large monitors.
+- **High-End Aesthetics**: A curated dark-themed design system with glassmorphism and subtle gradients.
 
-## Customization
+## 📁 Project Highlights
+- **Railway Express**: Next Gen Travel platform with seamless booking and live tracking.
+- **LMS Platform**: A modern learning management system.
+- **Nike Parallax**: A 3D motion showcase demonstrating depth and interaction.
 
-- **Images**: Replace the CSS gradients in `.p1`, `.p2`, etc., with `background-image: url(...)` to use real project screenshots.
-- **Text**: Edit `index.html` to update your content.
-- **Colors**: Modify the `:root` variables in `style.css`.
+## 🛠️ Installation & Setup
+To run this project locally:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/GSriCharan12/Portfolio.git
+   ```
+2. Open the directory in VS Code.
+3. Use the **Live Server** extension to launch `index.html`.
+
+---
+Designed and developed by [Gadde Sri Charan](https://www.linkedin.com/in/g-sri-charan).
