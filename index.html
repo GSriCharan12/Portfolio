@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Gadde Sri Charan</title>
+    <meta name="description"
+        content="Immersive portfolio of a creative developer specializing in high-end UI/UX and motion.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@400;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles for loader ensuring it loads first -->
+    <style>
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #050505;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+        }
+
+        .loader-text {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body class="loading">
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-text">IMAGINE</div>
+        <div class="loader-text">CREATE</div>
+        <div class="loader-text">EXPERIENCE</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="logo">GSC<span class="dot">.</span></div>
+        <div class="nav-right">
+            <a href="G-Sri-Charan-Resume.pdf" class="resume-btn" target="_blank">RESUME</a>
+            <div class="menu-btn" id="menu-toggle">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full Screen Menu -->
+    <div class="fs-menu">
+        <div class="menu-container">
+            <div class="menu-links">
+                <div class="menu-link-wrapper">
+                    <span class="menu-number">01</span>
+                    <a href="#" data-target=".hero" class="menu-item">HOME</a>
+                </div>
+                <div class="menu-link-wrapper">
+                    <span class="menu-number">02</span>
+                    <a href="#" data-target=".about" class="menu-item">ABOUT</a>
+                </div>
+                <div class="menu-link-wrapper">
+                    <span class="menu-number">03</span>
+                    <a href="#" data-target=".projects-list" class="menu-item">WORK</a>
+                </div>
+                <div class="menu-link-wrapper">
+                    <span class="menu-number">04</span>
+                    <a href="#" data-target=".experience" class="menu-item">JOURNEY</a>
+                </div>
+                <div class="menu-link-wrapper">
+                    <span class="menu-number">05</span>
+                    <a href="#" data-target=".contact" class="menu-item">CONTACT</a>
+                </div>
+            </div>
+            <div class="menu-footer">
+                <p>Designed & Built by Gadde Sri Charan</p>
+                <div class="socials">
+                    <a href="https://github.com/GSriCharan12" target="_blank">GH</a>
+                    <a href="https://www.linkedin.com/in/g-sri-charan" target="_blank">LI</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Container -->
+    <main class="main-content" id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Hero Section -->
+            <section class="hero section" data-color="dark">
+                <canvas id="hero-canvas"></canvas>
+                <div class="hero-content-3d">
+                    <h1 class="hero-title">
+                        <div class="line"><span data-value="CHOREOGRAPHING">CHOREOGRAPHING</span></div>
+                        <div class="line"><span class="outline" data-value="DIGITAL">DIGITAL</span></div>
+                        <div class="line"><span data-value="REALITY">REALITY</span></div>
+                    </h1>
+                    <div class="hero-sub">
+                        <h2>GADDE SRI CHARAN</h2>
+                        <p>FRONTEND DEVELOPER &bull; UI ENGINEER</p>
+                        <p class="tagline">I don’t just build UI — I choreograph them.</p>
+                    </div>
+                </div>
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <div class="mouse"></div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about section" data-color="light">
+                <div class="container small-container">
+                    <h2 class="section-heading">ABOUT ME</h2>
+                    <div class="about-content">
+                        <div class="about-img-container">
+                            <!-- Replace src with your image path -->
+                            <img src="profile img.png" alt="Gadde Sri Charan" class="about-img">
+                        </div>
+                        <div class="about-text">
+                            <p class="reveal-text">I am a developer focused on <span class="highlight">product
+                                    stability</span> and <span class="highlight">user-centric design</span>. I bridge
+                                the gap between sophisticated logic and fluid interactivity.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience & Education Section -->
+            <section class="experience section" data-color="light">
+                <div class="container">
+                    <h2 class="section-heading">JOURNEY</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="year">Internship</span>
+                            <div class="timeline-content">
+                                <h3>Frontend Developer Intern</h3>
+                                <h4>Techineur Solutions</h4>
+                                <p>Worked on building responsive and interactive user interfaces, implementing modern
+                                    frontend best practices.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">Education</span>
+                            <div class="timeline-content">
+                                <h3>Bachelor's in Computer Science & Engineering</h3>
+                                <h4>ICFAI University</h4>
+                                <p>Focused on Computer Science fundamentals and software engineering.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">Future</span>
+                            <div class="timeline-content">
+                                <h3>Open for Opportunities</h3>
+                                <p>Ready to take on new challenges and build impactful products.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects-list section" data-color="dark">
+                <div class="container">
+                    <h2 class="section-heading">PROJECTS</h2>
+
+                    <!-- Project 1 -->
+                    <div class="project-row">
+                        <div class="p-info">
+                            <h3>RAILWAY EXPRESS</h3>
+                            <p>Next Gen Travel - Seamless booking, live tracking, and premium comfort.</p>
+                            <div class="p-stack">
+                                <span>HTML</span><span>CSS</span><span>Javascript</span><span>Python</span><span>MySQL</span><span>JWT</span>
+                            </div>
+                            <div class="p-links">
+                                <a href="https://web-production-d6dee.up.railway.app/" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="p-image p1"></div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-row reversed">
+                        <div class="p-info">
+                            <h3>LMS PLATFORM</h3>
+                            <p>A modern LMS designed for seamless learning and management.</p>
+                            <div class="p-stack">
+                                <span>HTML/CSS</span><span>JavaScript</span><span>Node.js</span><span>Express.js</span><span>MySQL</span>
+                            </div>
+                            <div class="p-links">
+                                <a href="https://web-production-a26cb.up.railway.app/" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="p-image p2"></div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-row">
+                        <div class="p-info">
+                            <h3>NIKE PARALLAX</h3>
+                            <p>A 3D parallax slider built to showcase depth, motion, and interaction.</p>
+                            <div class="p-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <div class="p-links">
+                                <a href="https://nike-parallax-cards.netlify.app/" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="p-image p3"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Skills Section (Bars) -->
+            <!-- Services Section -->
+            <section class="services-section section" data-color="blue">
+                <div class="container small-container">
+                    <h2 class="section-heading">SERVICES</h2>
+                    <div class="services-list">
+
+                        <div class="service-item reveal-card">
+                            <div class="service-header">
+                                <span class="service-num">01/</span>
+                                <h3>WEB DEVELOPMENT</h3>
+                            </div>
+                            <p class="service-desc">Robust, scalable, and pixel-perfect frontend solutions integrated
+                                with powerful backend logic.</p>
+                            <div class="service-line"></div>
+                        </div>
+
+                        <div class="service-item reveal-card">
+                            <div class="service-header">
+                                <span class="service-num">02/</span>
+                                <h3>UI/UX DESIGN</h3>
+                            </div>
+                            <p class="service-desc">Focusing on usability and aesthetics to create intuitive digital
+                                experiences.</p>
+                            <div class="service-line"></div>
+                        </div>
+
+                        <div class="service-item reveal-card">
+                            <div class="service-header">
+                                <span class="service-num">03/</span>
+                                <h3>API INTEGRATION</h3>
+                            </div>
+                            <p class="service-desc">Seamlessly connecting applications with third-party services and
+                                ensuring efficient data flow.</p>
+                            <div class="service-line"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section (Horizontal Marquee) -->
+            <section class="certifications-marquee" data-color="dark">
+                <div class="container marquee-header">
+                    <h2 class="section-heading">CERTIFICATIONS</h2>
+                </div>
+
+                <div class="marquee-wrapper">
+                    <div class="marquee-content">
+                        <!-- Group 1 -->
+                        <div class="cert-card-small">
+                            <img src="certifications/Internship_Certificate_Techineur_page-0001.jpg" alt="Internship">
+                            <div class="cert-card-overlay">
+                                <span>Frontend Intern</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-small">
+                            <img src="certifications/deloitte-technology.png" alt="Deloitte">
+                            <div class="cert-card-overlay">
+                                <span>Technology Job Simulation</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-small">
+                            <img src="certifications/IBM-Cybersecurity-Fundamentals.jpg" alt="IBM">
+                            <div class="cert-card-overlay">
+                                <span>Cybersecurity</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-small">
+                            <img src="certifications/Infosys-Blockchain.jpg" alt="Infosys">
+                            <div class="cert-card-overlay">
+                                <span>Blockchain</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-small">
+                            <img src="certifications/ai-for-techies.png" alt="Scalar">
+                            <div class="cert-card-overlay">
+                                <span>Python using AI</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-small">
+                            <img src="certifications/IBM-Digital-Literacy.jpg" alt="IBM Literacy">
+                            <div class="cert-card-overlay">
+                                <span>Digital Literacy</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-small">
+                            <img src="certifications/nasscom-acquring-data.png" alt="Nasscom">
+                            <div class="cert-card-overlay">
+                                <span>Acquiring Data</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-small">
+                            <img src="certifications/nasscom-dataprocessing.png" alt="Nasscom">
+                            <div class="cert-card-overlay">
+                                <span>Data Processing</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-small">
+                            <img src="certifications/nasscom-exploratory-data-analysis.png" alt="Nasscom">
+                            <div class="cert-card-overlay">
+                                <span>EDA Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills section" data-color="dark">
+                <div class="container">
+                    <h2 class="section-heading">TECHNICAL ARSENAL</h2>
+                    <div class="skills-wrapper">
+                        <div class="skill-category">
+                            <h3>FRONTEND</h3>
+                            <div class="skill-list">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>RWD</span>
+                                <span>UI Design</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>BACKEND</h3>
+                            <div class="skill-list">
+                                <span>Node.js</span>
+                                <span>Python</span>
+                                <span>MySQL</span>
+                                <span>JWT Authentication</span>
+                                <span>Express.js</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>TOOLS</h3>
+                            <div class="skill-list">
+                                <span>Git / GitHub</span>
+                                <span>VS Code</span>
+                                <span>Browser DevTools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact section" data-color="dark">
+                <div class="container">
+                    <div class="contact-wrapper">
+                        <div class="contact-grid">
+                            <div class="contact-text">
+                                <h2>LET'S<br>COLLABORATE</h2>
+                                <p>Have a project in mind?</p>
+                            </div>
+                            <form class="contact-form" action="https://formspree.io/f/mojqddrl" method="POST">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder=" " required>
+                                    <label for="name">NAME</label>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder=" " required>
+                                    <label for="email">EMAIL</label>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" rows="3" placeholder=" " required></textarea>
+                                    <label for="message">MESSAGE</label>
+                                    <div class="line"></div>
+                                </div>
+                                <button type="submit" class="magnetic-btn">
+                                    <span class="btn-text">SEND</span>
+                                    <div class="btn-fill"></div>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="footer-icons">
+                                <a href="https://www.linkedin.com/in/g-sri-charan" target="_blank"
+                                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/GSriCharan12" target="_blank" aria-label="GitHub"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <!-- Lenovo Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
